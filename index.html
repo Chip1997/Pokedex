@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pokédex</title>
+  <title>Pokedex</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <h1>Pokédex</h1>
-  <div id="pokemon-list"></div>
-  <div id="pokemon-details"></div>
-
+  <button id="playButton">Tocame</button>
+  <audio id="intro">
+    <source src="sound/LittleRootSong.mp3" type="audio/mpeg">
+    Tu navegador no admite la reproducción de audio.
+  </audio>
+    <h1>Quien es este Pokemon?</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Busca el Pokemon">
+        <button id="search-button">Search</button>
+      </div>
+      
+      <div class="pokemon-container">
+        <img src="imgs/pokedex.png" alt="Pokemon Image" class="pokemon-image">
+        <div id="pokemon-details" class="pokemon-details"></div>
+      </div>
   <script src="poke.js"></script>
+  <footer>
+    <p class="copyr">Información obtenida gracias a pokeapi.co</p>
+  </footer>
 </body>
 </html>
